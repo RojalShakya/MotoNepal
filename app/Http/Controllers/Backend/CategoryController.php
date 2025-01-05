@@ -10,7 +10,7 @@ class CategoryController extends Controller
 {
     //
     public function index(){
-        return view ('dashboard.createcategory');
+        return view ('dashboard.category.createcategory');
     }
     public function store(Request $request){
         $validate = $request->validate([
@@ -21,6 +21,7 @@ class CategoryController extends Controller
         return redirect()->back();
     }
     public function show(){
-
+        $category=Category::all();
+        return view ('dashboard.category.view-category');
     }
 }

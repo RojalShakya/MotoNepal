@@ -25,11 +25,14 @@
           <span class="menu-title">Category</span>
           <i class="menu-arrow"></i>
         </a>
-
+        <div class="collapse" id="ui-basic">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="{{route('category')}}">View Category</a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{route('category')}}">Create Category</a></li>
+            {{-- <li class="nav-item"> <a class="nav-link" href="{{route('showblog')}}">View Blogs</a></li> --}}
+             </ul>
+        </div>
       </li>
-
-
-
       <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
           <i class="icon-head menu-icon"></i>
