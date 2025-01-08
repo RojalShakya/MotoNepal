@@ -8,6 +8,6 @@ class PostController extends Controller
 {
     //
     public function index(){
-        return view('frontend.post');
+        return view('frontend.category');
     }
 }

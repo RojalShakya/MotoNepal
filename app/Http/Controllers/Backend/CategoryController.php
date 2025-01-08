@@ -21,7 +21,7 @@ class CategoryController extends Controller
         return redirect()->back();
     }
     public function show(){
-        $category=Category::all();
-        return view ('dashboard.category.view-category');
+        $categories=Category::all();
+        return view ('dashboard.category.view-category',compact('categories'));
     }
 }

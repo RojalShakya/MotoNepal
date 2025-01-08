@@ -1,8 +1,5 @@
 @extends('frontend.layouts.main')
 @section('main-content')
-
-	<!-- Page Content -->
-
 	<div class="page_content">
 		<div class="container">
 			<div class="row row-lg-eq-height">

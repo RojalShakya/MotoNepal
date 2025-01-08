@@ -14,7 +14,7 @@ use Illuminate\Auth\Events\Login;
 //     return view('frontend.index');
 // });
 Route::get('/',[HomeController::class,'index']);
-Route::get('/post',[PostController::class,'index']);
+Route::get('/post',[PostController::class,'index'])->name('blog-page');
 
 Route::get('/login',[LoginController::class,'login'])->name('login');
 Route::post('/login',[LoginController::class,'loginVerify'])->name('login');
@@ -30,3 +30,4 @@ Route::post('blog/edit/{ids}',[BlogController::class,'update'])->name('update-bl
 
 Route::get('/category',[CategoryController::class,'index'])->name('category');
 Route::post('/category',[CategoryController::class,'store'])->name('category');
+Route::get('/category/show',[CategoryController::class,'show'])->name('showcategory');

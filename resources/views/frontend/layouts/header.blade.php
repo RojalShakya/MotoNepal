@@ -7,7 +7,7 @@
                     <nav class="main_nav">
                         <ul>
                             <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="#">Blogs</a></li>
+                            <li><a href="{{route('blog-page')}}">Blogs</a></li>
                             <li><a href="#">Automobiles</a></li>
                             <li><a href="#">Gears</a></li>
                             <li><a href="#">Video</a></li>
